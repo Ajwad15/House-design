@@ -39,41 +39,64 @@
     <header class="md:container mx-auto">
         <!-- Navbar Section  -->
         <nav>
+
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
-                    <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
-                        </div>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                            <li><a>Home</a></li>
-                            <li><a>Services</a></li>
-                            <li><a>Portfolio</a></li>
-                            <li><a>Blogs</a></li>
-                            <li><a>Contact Us</a></li>
-                        </ul>
-                    </div>
-                    <a class="font-bold text-2xl">Rinterio</a>
+
+
+                    <button class="btn btn-ghost text-2xl"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" class="rounded-full bg-lime-400">
+                            <path d="M7 7h8.586L5.293 17.293l1.414 1.414L17 8.414V17h2V5H7v2z" />
+                        </svg>Rinterio</button>
                 </div>
                 <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1">
-                        <li><a class="font-bold">Home</a></li>
-                        <li><a>Services</a></li>
+                    <ul class="menu menu-horizontal px-1 text-xs">
+                        <li><a>Home</a></li>
+                        <li>
+                            <a>Services</a>
+
+                        </li>
                         <li><a>Portfolio</a></li>
                         <li><a>Blogs</a></li>
                         <li><a>Contact Us</a></li>
+                        <li class="relative left-52"><Button><img src="./B10-Assignment-03-main/assets/search_icon.png"
+                                    width="24" height="24"></Button></li>
+                        <li><Button class="relative left-52"><img src="./B10-Assignment-03-main/assets/Cart icon.png"
+                                    width="24" height="24"></Button></li>
                     </ul>
+
                 </div>
-                <div class="navbar-end">
-                    <a class="btn bg-House-primary">Book Consult</a>
+
+                <div class="navbar-end hidden lg:block">
+                    <button class="btn bg-lime-400 text-black font-bold rounded-3xl text-sm ml-60">Book Consult<svg
+                            xmlns="http://www.w3.org/2000/svg" width="23" height="23"
+                            class="  fill-white rounded-full bg-black mr-2">
+                            <path d="M7 7h8.586L5.293 17.293l1.414 1.414L17 8.414V17h2V5H7v2z" />
+                        </svg></button>
                 </div>
             </div>
+            <div class="dropdown flex justify-end -mt-14">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                    <li><a>Home</a></li>
+                    <li>
+                        <a>Services</a>
+
+                    </li>
+                    <li><a>Portfolio</a></li>
+                    <li><a>Blogs</a></li>
+                    <li><a>Contact Us</a></li>
+                </ul>
+            </div>
         </nav>
+
         <!-- Banner Section -->
         <section class="space-y-3 content-center lg:text-center sm:text-center mt-24">
             <div class="mx-auto max-w-xl max-h-96"><img src="./assets/banner.png" alt=""></div>
@@ -179,7 +202,7 @@
 
             </div>
         </section>
-        <!--Main Section-03-->
+        <!-- Third Section -->
         <section class="lg:container mx-auto  bg-white">
 
             <div class="space-y-5 mx-auto text-center">
@@ -335,7 +358,7 @@
         </div>
 
         <div class="lg:container mx-auto">
-            <ul class="grid lg:grid-cols-5 grid-cols-1 -gap-10 text-white mx-52">
+            <ul class="grid lg:grid-cols-5 grid-cols-1 -gap-10 text-white mx-50">
                 <li class="mt-3">Home</li>
                 <li class="mt-3">Secvices</li>
                 <li class="mt-3">Portfolio</li>
